@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MyApplication"
 include ':app'
+//include ':unityLibrary'
+//project(':unityLibrary').projectDir=new File('..\\UnityProject\\androidBuild\\unityLibrary')
+
