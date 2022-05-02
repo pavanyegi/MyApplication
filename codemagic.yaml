@@ -4,10 +4,12 @@ workflows:
     instance_type: windows_x2
     environment:
       # Android code signing - Add the keystore_credentials group environment variables in Codemagic UI (either in Application/Team variables)
-       keystore
-       Rise@123
-       Rise@123
-       key0
+      {
+        keystore
+        Rise@123
+        Rise@123
+        key0
+      }
       vars:
         CM_KEYSTORE_PATH: /tmp/keystore.jks
         node: latest
