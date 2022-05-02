@@ -19,7 +19,7 @@ workflows:
           # CM_KEYSTORE_PASSWORD <-- Put your keystore password here
           # CM_KEY_ALIAS_PASSWORD <-- Put your keystore alias password here
         # CM_KEY_ALIAS_USERNAME <-- Put your keystore alias username here
-        - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS)
+        #pavan- google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS)
         - other
       vars:
         # Set up paths to application binary and test package
@@ -98,9 +98,9 @@ workflows:
         notify:
           success: true
           failure: false
-      google_play:                          # For publishing your Android app to Google Play
-        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-        track: alpha                      # Name of the track: internal, alpha, beta, production
+      #pavangoogle_play:                          # For publishing your Android app to Google Play
+       #pavan credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+       #pavan track: alpha                      # Name of the track: internal, alpha, beta, production
 
 
 
