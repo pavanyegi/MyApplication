@@ -26,9 +26,8 @@ workflows:
           echo $CM_KEYSTORE | base64 --decode > keystore.keystore
 
 
-      - name: Build Android APK
-        working_directory: android
-        script: ./gradlew assembleDebug
+      - name: test
+        script: ./gradlew test
 
 
 
