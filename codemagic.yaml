@@ -18,8 +18,7 @@ workflows:
           include: true
           source: true
     scripts:
-
-      - name: Set Android SDK location
+      - name: sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/local.properties
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/local.properties"
       - name: Set up keystore
